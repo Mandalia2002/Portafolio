@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: black;
+    padding: 3vw;
+    border-radius: 5px;
+    
+    nav{
+        a{
+            color: #ffff;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
