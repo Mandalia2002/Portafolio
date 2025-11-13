@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $pur1: #D7C6F5;
 $pur2: #8367B5;
 $pur3: #422675;
@@ -68,4 +69,26 @@ footer {
     header:active {
         visibility: visible;
     }
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: black;
+    padding: 3vw;
+    border-radius: 5px;
+    
+    nav{
+        a{
+            color: #ffff;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+        display: flex;
+        justify-content: space-evenly;
+    }
+>>>>>>> 70baf682fbe1bec3ca2a32d152f0cf8d67425f58
 }
