@@ -1,1 +1,156 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+}
+
+@keyframes move {
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+}
+
+.background {
+    overflow-x:hidden;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #0f021c;
+}
+
+.background span {
+    width: 5vmin;
+    height: 5vmin;
+    border-radius: 5vmin;
+    backface-visibility: hidden;
+    position: absolute;
+    animation: move;
+    animation-duration: 40;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+.background span:nth-child(0) {
+    color: #A4A05E;
+    top: 23%;
+    left: 72%;
+    animation-duration: 28s;
+    animation-delay: -1s;
+    transform-origin: -24vw 22vh;
+    svg {
+        filter: drop-shadow(0px 0px 10px currentColor);
+    }
+}
+
+.background span:nth-child(1) {
+    color: #A4A05E;
+    top: 1%;
+    left: 56%;
+    animation-duration: 48;
+    animation-delay: -3s;
+    transform-origin: -3vw -24vh;
+    svg {
+        filter: drop-shadow(0px 0px 10px currentColor);
+    }
+}
+
+.background span:nth-child(2) {
+    color: #A4A05E;
+    top: 83%;
+    left: 32%;
+    animation-duration: 96s;
+    animation-delay: -8s;
+    transform-origin: 19vw 25vh;
+    svg {
+        filter: drop-shadow(0px 0px 10px currentColor);
+    }
+
+}
+
+.background span:nth-child(3) {
+    color: #A4A05E;
+    top: 15%;
+    left: 10%;
+    animation-duration: 65s;
+    animation-delay: -5s;
+    transform-origin: -14vw -7vh;
+    svg {
+        filter: drop-shadow(0px 0px 10px currentColor);
+    }
+}
+
+.background span:nth-child(4) {
+    color: #A4A05E;
+    top: 71%;
+    left: 84%;
+    animation-duration: 63s;
+    animation-delay: -2s;
+    transform-origin: -17vw 13vh;
+    svg {
+        filter: drop-shadow(0px 0px 10px currentColor);
+    }
+}
+
+.background span:nth-child(5) {
+    color: #A4A05E;
+    top: 16%;
+    left: 13%;
+    animation-duration: 64s;
+    animation-delay: -1s;
+    transform-origin: 25vw 21vh;
+    svg {
+        filter: drop-shadow(0px 0px 10px currentColor);
+    }
+}
+
+.background span:nth-child(6) {
+    color: #A4A05E;
+    top: 82%;
+    left: 81%;
+    animation-duration: 41s;
+    animation-delay: -6s;
+    transform-origin: 23vw 10vh;
+    svg {
+        filter: drop-shadow(0px 0px 10px currentColor);
+    }
+}
+
+.background span:nth-child(7) {
+    color: #A4A05E;
+    top: 19%;
+    left: 46%;
+    animation-duration: 36s;
+    animation-delay: -8s;
+    transform-origin: 1vw 8vh;
+    svg {
+        filter: drop-shadow(0px 0px 10px currentColor);
+    }
+}
+
+.background span:nth-child(8) {
+    color: #A4A05E;
+    top: 67%;
+    left: 82%;
+    animation-duration: 37s;
+    animation-delay: -10s;
+    transform-origin: 16vw -14vh;
+    svg {
+        filter: drop-shadow(0px 0px 10px currentColor);
+    }
+}
+
+.background span:nth-child(9) {
+    color: #A4A05E;
+    top: 21%;
+    left: 78%;
+    animation-duration: 28s;
+    animation-delay: -8s;
+    transform-origin: -21vw 19vh;
+    svg {
+        filter: drop-shadow(0px 0px 10px currentColor);
+    }
+}
