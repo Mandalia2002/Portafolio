@@ -6,7 +6,8 @@ $ama2: #A4A05E;
 $ama3: #4B481B;
 
 header {
-    background-color: rgba(0, 0, 0, 0.336);
+    background-color: rgba(0, 0, 0, 0.212);
+    backdrop-filter: blur(5px);
     box-shadow: 1px 0px 20px $ama2;
     padding: 3vw;
     border-radius: 10px;

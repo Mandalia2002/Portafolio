@@ -17,6 +17,9 @@ $ama3: #4B481B;
     grid-area: 1 / 1 / 3 / 3;
     box-shadow: 1px 0px 10px $ama2;
     border-radius: 5%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    z-index: -1;
 }
 
 .div2 {
@@ -25,6 +28,8 @@ $ama3: #4B481B;
     color: #F5F2C6;
     padding: 5%;
     border-radius: 2%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
     //typing effect
 }
 
@@ -32,6 +37,10 @@ $ama3: #4B481B;
     grid-area: 2 / 3 / 4 / 5;
     box-shadow: 1px 0px 10px $ama2;
     border-radius: 5%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    z-index: -1;
+
 }
 
 .div4 {
@@ -40,12 +49,17 @@ $ama3: #4B481B;
     color: #F5F2C6;
     padding: 5%;
     border-radius: 5%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
 }
 
 .div5 {
     grid-area: 4 / 1 / 6 / 3;
     box-shadow: 1px 0px 10px $ama2;
     border-radius: 5%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    z-index: -1;
 }
 
 .div6 {
@@ -54,17 +68,24 @@ $ama3: #4B481B;
     color: #F5F2C6;
     padding: 5%;
     border-radius: 5%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
 }
 
 .div7 {
     grid-area: 5 / 3 / 7 / 5;
     box-shadow: 1px 0px 10px $ama2;
     border-radius: 5%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    z-index: -1;
 }
 
 .div8 {
     grid-area: 6 / 1 / 7 / 3;
     box-shadow: 1px 0px 10px $ama2;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
     color: #F5F2C6;
     padding: 5%;
     border-radius: 5%;
