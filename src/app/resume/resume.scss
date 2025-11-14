@@ -11,12 +11,16 @@ $ama3: #4B481B;
     grid-template-rows: repeat(6, 1fr);
     grid-column-gap: 50px;
     grid-row-gap: 10px;
+    padding: 10rem;
     color: $ama1;
 }
 
 .div1 {
     grid-area: 1 / 1 / 3 / 2;
     border-bottom: solid 1px $ama2;
+    // padding: 0;
+    align-self: start;
+    justify-self: start;
 }
 
 .div2 {
@@ -27,66 +31,76 @@ $ama3: #4B481B;
 .div3 {
     grid-area: 2 / 2 / 4 / 3;
     border-bottom: solid 1px $ama2;
-
+    align-self: start;
+    justify-self: start;
 }
 
 .div4 {
     grid-area: 3 / 1 / 5 / 2;
     border-bottom: solid 1px $ama2;
-
+    align-self: start;
+    justify-self: start;
 }
 
 .div5 {
     grid-area: 4 / 2 / 6 / 3;
     border-bottom: solid 1px $ama2;
-
+    align-self: start;
+    justify-self: start;
 }
 
 .div6 {
     grid-area: 5 / 1 / 7 / 2;
     border-bottom: solid 1px $ama2;
-
+    align-self: start;
+    justify-self: start;
 }
 
 .div7 {
     grid-area: 6 / 2 / 7 / 3;
     border-bottom: solid 1px $ama2;
-
+    align-self: start;
+    justify-self: start;
 }
 
 .div8 {
     grid-area: 1 / 3 / 2 / 4;
+    align-self: end;
+
 }
 
 .div9 {
     grid-area: 2 / 3 / 3 / 4;
+    align-self: end;
 }
 
 .div10 {
     grid-area: 3 / 3 / 4 / 4;
+    align-self: end;
+
 }
 
 .div11 {
     grid-area: 4 / 3 / 5 / 4;
+    align-self: end;
 }
 
 .div12 {
     grid-area: 5 / 3 / 6 / 4;
+    align-self: end;
 }
 
 .div13 {
     grid-area: 6 / 3 / 7 / 4;
+    align-self: end;
 }
 
 article{
-    justify-items: center;
+    align-content: center;
     h3{
         font-weight: 600;
     }
-    p{
-        text-align: center;
-    }
     img{
-        width: 5rem;
+        width: 15rem;
     }
 }
