@@ -1,0 +1,65 @@
+$pur1: #D7C6F5;
+$pur2: #8367B5;
+$pur3: #422675;
+$ama1: #F5F2C6;
+$ama2: #A4A05E;
+$ama3: #4B481B;
+
+* {
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+.container .glass {
+    width: 15rem;
+    height: 20rem;
+    background: linear-gradient(#fff2, transparent);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+    display: flex;
+    transition: 0.5s;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    margin: 1rem;
+    color: $ama1;
+
+    .logo {
+        visibility: visible;
+        width: 50rem;
+        color: #A4A05E;
+        svg{
+            margin: 1rem;
+        }
+    }
+
+    .text {
+        visibility: hidden;
+    }
+}
+
+.container .glass:hover {
+    border: 1px solid $ama3;
+    box-shadow: 0 0 25px $ama2;
+    text-shadow: 0 0 10px $pur2;
+
+    .logo {
+        visibility:hidden;
+    }
+
+    .text {
+        visibility: visible;
+    }
+
+    transition: 0.5s ease-in;
+    width: 50rem;
+    height: 20rem;
+
+
+}

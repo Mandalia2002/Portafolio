@@ -4,6 +4,7 @@
     padding-top: 0.5rem;
     padding-right: 1rem;
     box-sizing: border-box;
+
 }
 
 @keyframes move {
@@ -13,12 +14,14 @@
 }
 
 .background {
-    overflow-x:hidden;
+    background-image: linear-gradient(#4D3758, #100928);
+    background-attachment: fixed;
+    overflow-x: hidden;
     width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
-    background: #0f021c;
+
 }
 
 .background span {
@@ -42,6 +45,7 @@
     animation-duration: 28s;
     animation-delay: -1s;
     transform-origin: -24vw 22vh;
+
     svg {
         filter: drop-shadow(0px 0px 10px currentColor);
     }
@@ -54,6 +58,7 @@
     animation-duration: 48;
     animation-delay: -3s;
     transform-origin: -3vw -24vh;
+
     svg {
         filter: drop-shadow(0px 0px 10px currentColor);
     }
@@ -66,6 +71,7 @@
     animation-duration: 96s;
     animation-delay: -8s;
     transform-origin: 19vw 25vh;
+
     svg {
         filter: drop-shadow(0px 0px 10px currentColor);
     }
@@ -79,6 +85,7 @@
     animation-duration: 65s;
     animation-delay: -5s;
     transform-origin: -14vw -7vh;
+
     svg {
         filter: drop-shadow(0px 0px 10px currentColor);
     }
@@ -91,6 +98,7 @@
     animation-duration: 63s;
     animation-delay: -2s;
     transform-origin: -17vw 13vh;
+
     svg {
         filter: drop-shadow(0px 0px 10px currentColor);
     }
@@ -103,6 +111,7 @@
     animation-duration: 64s;
     animation-delay: -1s;
     transform-origin: 25vw 21vh;
+
     svg {
         filter: drop-shadow(0px 0px 10px currentColor);
     }
@@ -115,6 +124,7 @@
     animation-duration: 41s;
     animation-delay: -6s;
     transform-origin: 23vw 10vh;
+
     svg {
         filter: drop-shadow(0px 0px 10px currentColor);
     }
@@ -127,6 +137,7 @@
     animation-duration: 36s;
     animation-delay: -8s;
     transform-origin: 1vw 8vh;
+
     svg {
         filter: drop-shadow(0px 0px 10px currentColor);
     }
@@ -139,6 +150,7 @@
     animation-duration: 37s;
     animation-delay: -10s;
     transform-origin: 16vw -14vh;
+
     svg {
         filter: drop-shadow(0px 0px 10px currentColor);
     }
@@ -151,6 +163,7 @@
     animation-duration: 28s;
     animation-delay: -8s;
     transform-origin: -21vw 19vh;
+
     svg {
         filter: drop-shadow(0px 0px 10px currentColor);
     }

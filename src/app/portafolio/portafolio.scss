@@ -1,4 +1,9 @@
-/* From Uiverse.io by codebykay101 */
+$pur1: #D7C6F5;
+$pur2: #8367B5;
+$pur3: #422675;
+$ama1: #F5F2C6;
+$ama2: #A4A05E;
+$ama3: #4B481B;
 *{
     overflow: hidden;
 }
@@ -34,7 +39,7 @@
 }
 
 .container .glass:hover {
-    box-shadow: 0px 0px 30px 1px rgba(255, 238, 0, 0.432);
+    box-shadow: 0px 0px 30px 2px $ama2;
     transform: scale(0.98);
     border-radius: 20px;
 }
