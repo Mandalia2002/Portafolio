@@ -37,6 +37,19 @@ $ama3: #4B481B;
     backdrop-filter: blur(10px);
     border-radius: 5%;
     box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    .div1 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .div2 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
 
     .color {
         margin: 1rem;
@@ -86,7 +99,7 @@ $ama3: #4B481B;
         border: none;
     }
 
-    select:hover:open{
+    select:hover:open {
         background: $pur2;
         transition: ease-in 0.01s;
     }
