@@ -49,6 +49,16 @@ $ama3: #4B481B;
 
     .div2 {
         grid-area: 1 / 2 / 2 / 3;
+
+        ul {
+            text-decoration: none;
+            list-style: none;
+
+            button {
+                padding: 2%;
+                border-radius: 70%;
+            }
+        }
     }
 
     .color {

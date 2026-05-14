@@ -4,21 +4,45 @@
     </div>
     <div class="Table">
         <div class="div1">
-        <h3>Settings</h3>
-        <form action="">
-            <button class="color" value="color">Color</button>
-            <button class="black" value="black">B&W</button>
-            <br>
-            <select name="tipo" id="">
-                <option value="bust">Bust</option>
-                <option value="full">Full Body</option>
-            </select>
-            <br>
-            <button class="Character" value="extra">Character Extra</button>
-            <button class="Background" value="back">Background</button>
-        </form>
-    </div>
-    <div class="div2">
-    </div>
+            <h3>Settings</h3>
+            <form>
+                <button type="button" class="color" (click)="add('Color')">Color</button>
+                <button type="button" class="black" (click)="add('B&W')">B&W</button>
+                <br>
+
+                <select #tipo (change)="add(tipo.value === 'bust' ? 'Bust' : 'Full Body')">
+                    <option value="" disabled selected>Select Style</option>
+                    <option value="bust">Bust</option>
+                    <option value="full">Full Body</option>
+                </select>
+                <br>
+
+                <button type="button" (click)="add('Extra Character')">Character Extra</button>
+                <button type="button" (click)="add('Background')">Background</button>
+                <button type="button" (click)="clear()">
+                    Limpiar Todo
+                </button>
+            </form>
+        </div>
+
+        <div class="div2">
+            <h4>Resumen de Cotización</h4>
+
+            @if (items().length > 0) {
+
+            }
+
+            <ul id="list">
+                @for (item of items(); track $index) {
+                <li>
+                    {{item.name}} - ${{item.price.toFixed(2)}}
+                    <button type="button" (click)="remove($index)">X</button>
+                </li>
+                } @empty {
+                <li>No hay elementos seleccionados</li>
+                }
+            </ul>
+            <h3>Total: ${{ total().toFixed(2) }}</h3>
+        </div>
     </div>
 </div>
