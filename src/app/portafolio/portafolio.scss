@@ -32,6 +32,11 @@ $ama3: #4B481B;
     margin: 0 -45px;
     backdrop-filter: blur(10px);
     transform: rotate(calc(var(--r) * 1deg));
+
+    img{
+        width: 7.5rem;
+        padding: 5%;
+    }
 }
 
 .container:hover .glass {
@@ -56,11 +61,6 @@ $ama3: #4B481B;
     justify-content: center;
     align-items: center;
     color: #fff;
-}
-
-.container .glass svg {
-    font-size: 2.5em;
-    fill: #fff;
 }
 
 .parent {

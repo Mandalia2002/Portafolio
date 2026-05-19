@@ -6,15 +6,15 @@ $ama2: #A4A05E;
 $ama3: #4B481B;
 
 * {
-    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .container {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 5rem;
+    flex-wrap: wrap;
 }
 
 .container .glass {
@@ -23,47 +23,66 @@ $ama3: #4B481B;
     background: linear-gradient(#fff2, transparent);
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
-    transition: 0.5s;
+    transition: 0.5s ease-in-out;
     border-radius: 10px;
     backdrop-filter: blur(10px);
     margin: 1rem;
     color: $ama1;
-    justify-items: center;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     .logo {
-        visibility: visible;
-        width: 15rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
         color: #A4A05E;
         padding: 1rem;
-        svg{
-            align-content: center;
+        
+        svg {
+            width: 15rem; 
+            height: 15rem;
         }
     }
 
+    img {
+        display: none;
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%; 
+        object-fit: cover;
+        margin-bottom: 1rem;
+    }
+
     .text {
-        visibility: hidden;
+        display: none;
+        text-align: center;
     }
 }
 
+/* Efecto Hover */
 .container .glass:hover {
+    width: 20rem;
+    height: 22rem;
     border: 1px solid $ama3;
     box-shadow: 0 0 25px $ama2;
     text-shadow: 0 0 10px $pur2;
 
     .logo {
-        visibility:hidden;
+        display: none;
+        transition: 0.5s ease-in-out;
+    }
+
+    img {
+        display: block;
     }
 
     .text {
-        visibility: visible;
-        img{
-            width: 5rem;
-        }
+        display: block;
+        padding: 5%;
     }
-
-    transition: 0.5s ease-in-out;
-    width: 30rem;
-    height: 20rem;
-
-
 }
