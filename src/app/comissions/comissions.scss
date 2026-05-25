@@ -133,3 +133,16 @@ $ama3: #4B481B;
         box-shadow: 1px 1px 10px $pur1;
     }
 }
+
+
+@media (max-width: 768px) {
+    .parent {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-row-gap: 1.5rem;
+    }
+
+    .Proof, .Table {
+        grid-area: auto !important; 
+    }
+}
