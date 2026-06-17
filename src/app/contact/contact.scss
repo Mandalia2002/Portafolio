@@ -20,7 +20,7 @@ $ama3: #4B481B;
 .container .glass {
     width: 15rem;
     height: 20rem;
-    background: linear-gradient(#fff2, transparent);
+    background: linear-gradient(rgba(153, 0, 255, 0.133), transparent);
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
     transition: 0.5s ease-in-out;
@@ -42,10 +42,12 @@ $ama3: #4B481B;
         width: 100%;
         color: #A4A05E;
         padding: 1rem;
-        
+        animation: pulseVisibility 4s ease-in-out;
+
         svg {
-            width: 15rem; 
+            width: 15rem;
             height: 15rem;
+            filter: drop-shadow(0 0 5px $ama2);
         }
     }
 
@@ -53,14 +55,29 @@ $ama3: #4B481B;
         display: none;
         width: 15rem;
         height: 15rem;
-        border-radius: 50%; 
+        border-radius: 50%;
         object-fit: cover;
         margin-bottom: 1rem;
+        animation: pulseVisibility 4s ease-in-out;
     }
 
     .text {
         display: none;
         text-align: center;
+        text-shadow: 0 0 25px $ama2;
+
+    }
+}
+
+@keyframes pulseVisibility {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1);
     }
 }
 

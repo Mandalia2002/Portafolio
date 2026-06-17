@@ -4,8 +4,8 @@
     grid-template-rows: auto 1fr auto;
     grid-column-gap: 2%;
     grid-row-gap: 2%;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
     padding-bottom: 5%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #9D7BFF;
@@ -13,7 +13,7 @@
 
 table {
     width: 100%;
-    table-layout: fixed; 
+    table-layout: fixed;
     border-collapse: separate;
     border-spacing: 1rem;
     margin-bottom: 2rem;
@@ -45,7 +45,7 @@ td p {
 
 .div1 {
     grid-area: 2 / 1 / 3 / 3;
-    background: linear-gradient(#fff2, transparent);
+    background: linear-gradient(rgba(153, 0, 255, 0.133), transparent);
     border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 20px;
@@ -55,7 +55,7 @@ td p {
 
 .div2 {
     grid-area: 2 / 3 / 3 / 4;
-    background: linear-gradient(#fff2, transparent);
+    background: linear-gradient(rgba(153, 0, 255, 0.133), transparent);
     border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 20px;
@@ -64,7 +64,7 @@ td p {
 
 .div3 {
     grid-area: 3 / 1 / 4 / 4;
-    background: linear-gradient(#fff2, transparent);
+    background: linear-gradient(rgba(153, 0, 255, 0.133), transparent);
     border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 20px;
@@ -93,26 +93,26 @@ td p {
         grid-area: auto !important;
     }
 
-     
-    /* Transformamos la tabla en un contenedor Flexbox vertical */
-    table, tbody, tr, th, td {
+    table,
+    tbody,
+    tr,
+    th,
+    td {
         display: block;
         width: 100%;
     }
 
     table {
-        border-spacing: 0; /* Eliminamos el espaciado de tabla */
+        border-spacing: 0;
     }
 
-    /* Ocultamos la fila de cabeceras (th) originales porque se verían amontonadas arriba */
-    tr:first-child {
+    tr>th {
         display: none;
     }
 
-    /* Cada celda (td) ahora actuará como una tarjeta individual */
     td {
         margin-bottom: 1.5rem;
-        background: linear-gradient(#fff2, transparent);
+        background: linear-gradient(rgba(153, 0, 255, 0.133), transparent);
         border: 1px solid rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(10px);
         border-radius: 20px;
@@ -120,9 +120,8 @@ td p {
         padding: 1.5rem;
     }
 
-    /* Agregamos el título de la categoría simulando el <th> usando un pseudo-elemento */
     td::before {
-        content: attr(data-label); /* Lee el título desde el HTML */
+        content: attr(data-label);
         display: block;
         font-weight: bold;
         font-size: 1.3rem;

@@ -21,7 +21,7 @@ $ama3: #4B481B;
     position: relative;
     width: 200px;
     height: 300px;
-    background: linear-gradient(#fff2, transparent);
+    background: linear-gradient(rgba(153, 0, 255, 0.133), transparent);
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
     display: flex;
@@ -34,10 +34,23 @@ $ama3: #4B481B;
     transform: rotate(calc(var(--r) * 1deg));
 
     img{
-        width: 7rem;
+        display:none;
+        width: 5rem;
         padding: 5%;
     }
 }
+
+@keyframes pulseVisibility {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 
 .container:hover .glass {
     transform: rotate(0deg);
@@ -48,6 +61,10 @@ $ama3: #4B481B;
     box-shadow: 0px 0px 7px 2px $ama2;
     transform: scale(0.98);
     border-radius: 20px;
+    img{
+        display:block;
+        animation: pulseVisibility 2s ease-in-out;
+    }
 }
 
 .container .glass::before {
