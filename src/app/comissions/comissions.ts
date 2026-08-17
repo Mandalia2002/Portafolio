@@ -8,6 +8,7 @@ import { Component, computed, signal } from '@angular/core';
 })
 export class Comissions {
   items = signal<{ name: string, price: number }[]>([]);
+  modal = document.getElementById("PruebaModal");
 
   prices: Record<string, number> = {
     'Color': 20.00,
@@ -33,5 +34,11 @@ export class Comissions {
 
   clear() {
     this.items.set([]);
+  }
+
+  buy(){
+    if (this.modal) {
+      this.modal.style.display = "block";
+    }
   }
 }
