@@ -8,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class Resume {
 
+  downloadCV(): void {
+    const anchor = document.createElement('a');
+    anchor.href = '/'; 
+    anchor.download = 'Curriculum.pdf';   
+    
+    document.body.appendChild(anchor);
+    anchor.click();
+    document.body.removeChild(anchor);
+  }
 }
